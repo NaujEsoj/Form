@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    align-items: center;
+    background-color: #d48b9d;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn2,
+.btn1 {
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    height: 50px;
+
+}
+
+.btn1 {font-size: 0px;min-width: 100px;min-height: 22px;}
+.btn1::after {font-size: 14px;}
+
+.btn1::after {
+content: "Submit Soul to Devil";
+}
+
+.btn2::after {
+    content: "Seek for Redemption";
+}
+
+.btn2:hover::after {
+ content: "Submit Soul to Devil";
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: rgb(141, 10, 10);
+    border-radius: 10px;
+    color: white;
+}
+
+.form {
+    background-color: lightgreen;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 40px 0;
+    padding: 30px;
+    width: 80%;
+}
+
+.form textarea {
+    height: 100px;
+    width: 250px;
+}
+
+.form input[type='text'],
+.form input[type='number'] {
+    background-color: #FFFFFF;
+    border: 5px solid #D6D9DC;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 2px;
+    width: 50%;
+}
+
+.form input[type='radio'] {
+    float: left;
+    margin: 6px 0 0 1px;
+}
+
+.form input[type='text']:invalid,
+.form input[type='number']:invalid {
+    border: 1px solid #D55C5F;
+    box-shadow: none;
+    color: #D55C5F;
+}
+
+.given-part {
+    border: none;
+}
+
+.given-part label {
+    display: block;
+    float: left;
+    padding: 0 20px 0 10px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: lightgray;
+}
+
+.inspiration{
+    margin-top: 20px;
+    width: 250px;
+}
+
+label {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: gray;
+    margin-bottom: 7px;
+}
+
+.title {
+    background-color: #4e4e50 ;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+}
+
+@media only screen and (min-width: 700px) {
+    .form {
+        width: 40%;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="title">
+        <h1 class="title--main">Soul Submission</h1>
+        <p class="title--text">Complete this form to submit your soul and flesh to de Devil</p>
+    </header>
+    <form class="form">
+        <fieldset action="" method="GET" class="soul-submission">
+            <fieldset class="name">
+            <label for="name">Full Terrestrial Name</label>
+            <input id="name"
+                   name="name"
+                   type="text">
+            </fieldset>
+            <fieldset class="soul-age">
+            <label for="soul-age">Soul Age (in eons)</label>
+            <input type="number"
+                   name="soul-age"
+                   id="soul-age">
+            </fieldset>
+            <fieldset class='given-part'>
+                    <legend>You gonna give?</legend>
+                    <div class="radial-gvn-part"></div>
+                        <input id='part-1' name='part' type='radio' value="soul"/>
+                        <label for='part-1' class='radio-label'>Soul</label>
+                        <input id='part-2' name='part' type='radio' value="flesh"/>
+                        <label for='part-2' class='radio-label'>Flesh</label>
+                        <input id='part-3' name='part' type='radio' value="both"/>
+                        <label for='part-3' class='radio-label'>Both</label>
+                    </div>
+            </fieldset>
+            <fieldset class="wanted-destiny">
+                <label for="destiny">Wanted Destiny for your Soul?</label>
+                <select name="destiny" id="destiny">
+                    <option value="hell">Hell</option>
+                    <option value="super-hell">Super Hell</option>
+                    <option value="netherworld">Netherworld</option>
+                    <option value="niflheim">Niflheim</option>
+                    <option value="underworld">Underworld</option>
+                    <option value="toonela">Toonela</option>
+                    <option value="duzakh">Duzakh</option>
+                </select>
+            </fieldset>
+            <fieldset class="inspiration">
+                <legend>Who inspire you to grant your Soul?</legend>
+                <div class="checkbox">
+                    <input type="checkbox" id="i1" value="Slaanesh" name="inspiration">
+                    <label for="i1">Slaanesh</label>
+                    <input type="checkbox" id="i2" value="Lilith" name="inspiration">
+                    <label for="i2">Lilith</label>
+                    <input type="checkbox" id="i3" value="Cthulhu" name="inspiration">
+                    <label for="i3">Cthulhu</label>
+                    <input type="checkbox" id="i4" value="Terry" name="inspiration">
+                    <label for="i4">Terry</label>
+                    <input type="checkbox" id="i5" value="Baal" name="inspiration">
+                    <label for="i5">Baal</label>
+                    <input type="checkbox" id="i6" value="Valak" name="inspiration">
+                    <label for="i6">Valak</label>
+                </div>
+            </fieldset>
+        <fieldset>
+                <legend>Please describe actions you've performed to deserve total damnation</legend>
+            <textarea id='achievements' name='achievements'></textarea>
+        </fieldset>
+        <div class="btn">
+            <button class="btn1"></button>
+            <button class="btn2"></button>
+        </div>
+    </form>
+</body>
+</html>
